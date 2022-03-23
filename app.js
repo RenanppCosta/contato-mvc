@@ -1,0 +1,20 @@
+
+// importando o express
+const express = require("express");
+
+//importando os roteadores
+const ContatosRouter = require("./routes/ContatosRouter");
+
+// criando um servidor ou aplicação usando express
+const app = express();
+
+// criando rota get no endereço "/" para responder a requisição com um olá
+app.get("/", (req, res)=>{
+    res.send("Olá")
+});
+
+// usando os roteadores
+app.use("/", ContatosRouter);
+
+// executar/rodar a aplicação
+app.listen(3000, ()=>{console.log("Escutando na porta 3000")});
