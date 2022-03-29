@@ -8,6 +8,10 @@ const ContatosRouter = require("./routes/ContatosRouter");
 // criando um servidor ou aplicação usando express
 const app = express();
 
+// Configurar seu EJS como seu template engine
+
+app.set("view engine", "ejs")
+
 // criando rota get no endereço "/" para responder a requisição com um olá
 app.get("/", (req, res)=>{
     res.send("Olá")
