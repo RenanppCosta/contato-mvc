@@ -12,6 +12,10 @@ const app = express();
 
 app.set("view engine", "ejs");
 
+// configurando a pasta public para arquivos estáticos
+
+app.use(express.static("public"))
+
 // criando rota get no endereço "/" para responder a requisição com um olá
 app.get("/", (req, res) => {
   res.send("Olá");
