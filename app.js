@@ -11,6 +11,9 @@ const app = express();
 // Configurar seu EJS como seu template engine
 
 app.set("view engine", "ejs");
+// configurando o req.body para conter informações
+
+app.use(express.urlencoded({extended: false}))
 
 // configurando a pasta public para arquivos estáticos
 

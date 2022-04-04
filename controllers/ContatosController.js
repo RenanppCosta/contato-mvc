@@ -6,7 +6,7 @@ module.exports = {
 
     listarContatos: (req, res)=>{
         let contatos = require(`../database/contatos_${uid}.json`);
-        res.render("home.ejs",{contatos:contatos})
+        res.render("home.ejs",{contatos})
     },
     
     capturarContato:(req, res)=>{
@@ -21,7 +21,7 @@ module.exports = {
         if(!contato){
             res.send("Contato inexistente")
         }else{
-            res.send(contato)
+            res.render("home.ejs")
         }
 
     }
