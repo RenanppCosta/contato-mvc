@@ -3,72 +3,22 @@
         "id": 1,
         "nome": "Naruto Uzumaki",
         "email": "naruto@teste.com",
-        "senha": "$2b$10$f9ElcnNIDjjG6GDx/qX8VOepwk7bPB.I01tEiwA9OSR7AJptx6KtW"
+        "senha": "$2b$10$f9ElcnNIDjjG6GDx/qX8VOepwk7bPB.I01tEiwA9OSR7AJptx6KtW",
+        "adimplente": true
     },
     {
         "id": 2,
         "nome": "Sasuke Uchiha",
         "email": "sasuke@teste.com",
-        "senha": "$2b$10$f9ElcnNIDjjG6GDx/qX8VOepwk7bPB.I01tEiwA9OSR7AJptx6KtW"
+        "senha": "$2b$10$f9ElcnNIDjjG6GDx/qX8VOepwk7bPB.I01tEiwA9OSR7AJptx6KtW",
+        "adimplente": true
     },
     {
         "id": 3,
         "nome": "Sakura Haruno",
         "email": "sakura@teste.com",
-        "senha": "$2b$10$f9ElcnNIDjjG6GDx/qX8VOepwk7bPB.I01tEiwA9OSR7AJptx6KtW"
-    },
-    {
-        "id": 4,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$UxBD9CUoDm/pbLPPzL94X.z3pl3Tvt78qz6UrngREuC5b.m9XUXPS"
-    },
-    {
-        "id": 5,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$6Onn5dlHgr1fo.drmweTLOcoJacPG5XJHzZTBa3QCLFtONJGjvVKK"
-    },
-    {
-        "id": 6,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$wFuzk1bBw7xs54Gz2wN3MuId6B0mYKe0Rwh4Ub0Uvv7ZfX5LzheDW"
-    },
-    {
-        "id": 7,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$E1gPqIZMi8dPGb82bOV6cuGQvUiw0RRV7JiFFfYjDrsRuJtmIp4X2"
-    },
-    {
-        "id": 8,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$Ger5bzCw/w0Hl0c.Vm4eoeQs6kQhRkOUQhqI2BctIofhWYkQoKE0G"
-    },
-    {
-        "id": 9,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$JSHbmmzBzhiS0qbAyLBCLO6RYGfcxYZSObN/ZTPTRfn7ggc24Tqwq"
-    },
-    {
-        "id": 10,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$aDYhv0Ihn8IiavmIdn9bpOpmxXkiDxzGsPm3A.1/CtOD1H1GbUJBW"
-    },
-    {
-        "id": 11,
-        "nome": "Renan Pinto Pereira da Costa",
-        "email": "renanppcosta@gmail.com",
-        "senha": "$2b$10$tDIRADGQHqY7NhhJqW29PuYu7pRfkM158tOmq9N.iC10BsTfmQdeK"
-    },
-    {
-        "id": 12,
-        "nome": "Juliana de Moraes de Almeida",
-        "email": "juliana.moraes817@gmail.com",
-        "senha": "$2b$10$I7mTO4IxVaduJE2.wOE/WudS1J/8Btkj.7IZ7Ug3mmy0qyu1YOyMy"
+        "senha": "$2b$10$f9ElcnNIDjjG6GDx/qX8VOepwk7bPB.I01tEiwA9OSR7AJptx6KtW",
+        "adimplente": true
     }
+    
 ]

@@ -5,12 +5,16 @@ const express = require("express");
 const ContatosRouter = require("./routes/ContatosRouter");
 const UsuariosRouter = require("./routes/UsuariosRouter");
 
+// importando os middlewares
+const marcaEntradaDeRequisição = require("./middlewares/marcaEntradaDeRequisição")
+
 // criando um servidor ou aplicação usando express
 const app = express();
 
 // Configurar seu EJS como seu template engine
 
 app.set("view engine", "ejs");
+
 // configurando o req.body para conter informações
 
 app.use(express.urlencoded({extended: false}))
@@ -18,6 +22,10 @@ app.use(express.urlencoded({extended: false}))
 // configurando a pasta public para arquivos estáticos
 
 app.use(express.static("public"))
+
+//aplicando middlewares globais
+
+app.use(marcaEntradaDeRequisição)
 
 // criando rota get no endereço "/" para responder a requisição com um olá
 app.get("/", (req, res) => {

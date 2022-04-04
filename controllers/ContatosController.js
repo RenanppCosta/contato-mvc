@@ -21,7 +21,7 @@ module.exports = {
         if(!contato){
             res.send("Contato inexistente")
         }else{
-            res.render("home.ejs")
+            res.send(contato)
         }
 
     }
