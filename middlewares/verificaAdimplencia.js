@@ -7,8 +7,8 @@ module.exports = (req, res, next) =>{
     // importa os usuarios
     const usuarios = require("../database/usuarios.json")
 
-    // capturar o usuario de id==uid
-    const usuario = usuarios.find( u => u.id == uid)
+    // capturar o usuario de id==req.usuario.id
+    const usuario = usuarios.find( u => u.id == req.usuario.id)
 
     //verificar se o usuario é adimplente
     if(usuario.adimplente){

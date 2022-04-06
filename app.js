@@ -1,12 +1,15 @@
 // importando o express
 const express = require("express");
+const session = require("express-session")
+
 
 //importando os roteadores
 const ContatosRouter = require("./routes/ContatosRouter");
 const UsuariosRouter = require("./routes/UsuariosRouter");
 
 // importando os middlewares
-const marcaEntradaDeRequisição = require("./middlewares/marcaEntradaDeRequisição")
+const marcaEntradaDeRequisição = require("./middlewares/marcaEntradaDeRequisição");
+
 
 // criando um servidor ou aplicação usando express
 const app = express();
@@ -22,6 +25,14 @@ app.use(express.urlencoded({extended: false}))
 // configurando a pasta public para arquivos estáticos
 
 app.use(express.static("public"))
+
+// configurando o uso da session
+
+app.use(session({
+    secret:"segredo",
+    resave: false,
+    saveUninitialized: false
+}))
 
 //aplicando middlewares globais
 
