@@ -43,22 +43,30 @@ module.exports ={
     login: (req, res)=>{
         // pegar o email e senha digitados pelo usuario
         let {email, senha} = req.body;
-
+        console.log(req.body)
         // carregar o array de usuarios
         const usuarios = require("../database/usuarios.json");
 
         // verficiar se o email existe e se a senha do email esta certa
-        usuarios.find(
-            u => (u.email == email && bcrypt.compareSync(senha, u.senha))
+        let usuario = usuarios.find(
+            u => u.email == email
         )
 
-           //if(usuario == undefined){
-               //res.send("Erro! Usuário não encontrado.")
-           //}else{
-              // req.session.usuario = usuario
-              // res.redirect("/contatos")
-          // }
-        ;
+        if(!usuario){
+            res.redirect("/login", {
+                errors: "email ou senha não existem"
+                })
+        }
+
+        if(!bcrypt.compareSync(senha, usuario.senha)){
+            res.redirect("/login", {
+            errors: "email ou senha não existem"
+            })
+
+        }
+
+        req.session.usuario = usuario
+        res.redirect("/contatos")  
 
     }
 }
